@@ -1,3 +1,5 @@
+require pry
+
 class Dog 
   
   attr_accessor :name
@@ -14,7 +16,8 @@ class Dog
   end 
   
   def self.all 
-    puts @@all.split 
+    puts @@all
+    binding.pry
   end 
   
   
